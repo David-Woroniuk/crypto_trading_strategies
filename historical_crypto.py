@@ -76,7 +76,7 @@ class HistoricalData (object):
       
       print("""'{0}' was not found in the top 200 cryptocurrencies. \n
       Please search `https://coinmarketcap.com/coins/` for the correct ticker. \n
-      Alternatively, please run the XXXXX function to return the appropriate ticker""".format(self.ticker))
+      Alternatively, please run the 'find_all_tickers' function to return the appropriate ticker""".format(self.ticker))
           
     except Exception as e:
       raise e
