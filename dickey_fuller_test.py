@@ -2,13 +2,13 @@ def dickey_fuller(series, regression_type, criterion):
   '''
   This function conducts the augmented dickey fuller test.
 
-  Inputs:   series: Pandas series to be tested
-            regression_type: “c” (constant only),”ct” (constant and trend),”ctt” (constant, linear & quadratic trend),”nc” (no constant or trend)
-            criterion: "BIC" or "AIC" - Bayesian or Akaike Information Criteria
+  Inputs:   series: This can be a Pandas DataFrame column, or Pandas Series to be tested.
+            regression_type: “c” (constant only),”ct” (constant and trend),”ctt” (constant, linear & quadratic trend),”nc” (no constant or trend).
+            criterion: "BIC" or "AIC" - Bayesian or Akaike Information Criteria.
 
-  Prints:   ADF Statistic: test statistic
-            p-value: associated p-value
-            critical values: confidence levels at which to accept or reject null
+  Prints:   ADF Statistic: test statistic.
+            p-value: associated p-value.
+            critical values: confidence levels at which to accept or reject null.
             
   Outputs:  result[0]: ADF Statistic.
             values_list: Critical Values at the 1%, 5% and 10% values.
