@@ -1,3 +1,8 @@
+import statsmodels.api as sm
+
+
+
+
 def autocorrelation_and_partial_test(data, lags):
   '''
   This function conducts ACF and PACF tests using the statsmodels package.
